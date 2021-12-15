@@ -50,7 +50,7 @@ Though I learnt a lot of things in this project, I am still not comfortable in p
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/css/css_align.asp) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [w3schools](https://www.w3schools.com/css/css_align.asp)
 
 ## Author
 
