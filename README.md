@@ -35,7 +35,7 @@ Users should be able to:
 
 ### What I learned
 
-Learnt how to center div element using flexbox. Made use of <figure> element for the first time.
+Learnt how to center div element using flexbox. Made use of HTML element figure for the first time.
 Learnt to use svg as an image.
 
 ```html
