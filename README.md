@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Vinitvh/nft-preview-card-component)
+- Solution URL: [GitHub](https://github.com/Vinitvh/nft-preview-card-component)
 
 ## My process
 
