@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --dark-blue-text: hsl(215, 32%, 27%);
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: var(--dark-blue-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--dark-blue-card);
+  height: 462px;
+  padding: 1rem;
+  border-radius: 11px;
+  position: relative;
+}
+
+.card figure {
+  position: relative;
+}
+
+.card figure img {
+  width: 100%;
+  height: 50%;
+  border-radius: 6px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0.8rem 0;
+}
+
+.card .card-title:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+
+.card .card-text-lead {
+  font-size: 18px;
+  color: var(--primary-soft-blue);
+  font-weight: 300;
+}
+
+.card .card-text-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.card .card-text-info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card-text-info img {
+  width: auto;
+  height: 1rem;
+}
+
+.card .card-text-info .ethr {
+  color: var(--primary-cyan);
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.card .card-text-info .time {
+  color: var(--primary-soft-blue);
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 1.1rem 0;
+}
+
+.card-footer img {
+  width: auto;
+  height: 1.9rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.card-footer span {
+  font-size: 14px;
+  color: var(--primary-soft-blue);
+  padding: 0 0.5rem 0 0.8rem;
+}
+
+.card-footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-footer a:hover {
+  color: var(--primary-cyan);
+}
+
+.card figure .overlay {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-cyan);
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.card figure .overlay img {
+  width: auto;
+  height: 2rem;
+}
+
+.card figure:hover .overlay {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .card .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card .card-text-lead {
+    font-size: 1rem;
+  }
+}
